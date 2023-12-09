@@ -9,7 +9,7 @@ enum Days {
 }
 
 function isWeekend(day: Days): boolean {
-  return day === Days.SUNDAY;
+  return day === Days.SATURDAY || day === Days.SUNDAY;
 }
 
 //приклад

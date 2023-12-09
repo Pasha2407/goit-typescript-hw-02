@@ -5,8 +5,7 @@ type User = {
   password: string;
 }
 
-type UserChange = Omit<User, 'name' | 'surname'>
-function createOrUpdateUser(initialValues: UserChange) {
+function createOrUpdateUser(initialValues: Partial<User>) {
 }
 
 createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
